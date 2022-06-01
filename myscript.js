@@ -45,7 +45,9 @@ for (let v in venue){
 	
 }
 
-
+if ('serviceWorker' in navigator){
+	navigator.serviceWorker.register('/sw.js');
+}
 
 };
 
